@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ZJJCellForRow</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> static NSString *rid=&lt;#rid#&gt;;
+    
+    &lt;#Class#&gt; *cell=[tableView dequeueReusableCellWithIdentifier:rid];
+    
+    if(cell==nil){
+        
+        cell=[[&lt;#Class#&gt; alloc] initWithStyle:UITableViewCellStyleDefault      reuseIdentifier:rid];
+        
+    }  
+    
+    return cell;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C28F7269-0590-444C-86ED-5184A386C729</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速cellForRow方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CellForRow</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
