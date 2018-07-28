@@ -3,21 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ZJJAssign</string>
+	<string>ZJJGCDGetGlobal</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,assign) &lt;#Class#&gt; &lt;#property#&gt;;</string>
+	<string>        dispatch_queue_t &lt;#变量名称#&gt; = dispatch_get_global_queue(&lt;#队列优先级#&gt;, 0);
+        dispatch_async(&lt;#变量名称#&gt;, ^{
+       
+            });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>004808AA-65A5-47CC-A8E2-C646ED1E69E8</string>
+	<string>2933E5B5-49A1-4984-8E8A-1D98C0CB9A6E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>只能修饰数值类型的变量 不能修饰对象</string>
+	<string>获取系统并行队列，队列优先级分为DISPATCH_QUEUE_PRIORITY_DEFAULT、DISPATCH_QUEUE_PRIORITY_HIGH等</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>assign修饰的属性</string>
+	<string>获取系统全局并行队列</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

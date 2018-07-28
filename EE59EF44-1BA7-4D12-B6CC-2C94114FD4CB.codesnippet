@@ -3,19 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ZJJStrong</string>
+	<string>ZJJGCDMain</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,strong) &lt;#Class#&gt; *&lt;#object#&gt;;</string>
+	<string>        dispatch_async(dispatch_get_main_queue(), ^{
+            
+        });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5A54A75F-F972-4D2F-A792-F0FD5FDAFE32</string>
+	<string>EE59EF44-1BA7-4D12-B6CC-2C94114FD4CB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>主线程运行UI刷新等操作</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>strong申明的属性</string>
+	<string>主线程运行</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

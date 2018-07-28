@@ -3,21 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ZJJAssign</string>
+	<string>ZJJGCDCreateAsync</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,assign) &lt;#Class#&gt; &lt;#property#&gt;;</string>
+	<string>    dispatch_queue_t &lt;#变量名称#&gt; = dispatch_queue_create(&lt;#队列名称，可以为NULL#&gt;, &lt;#队列类型#&gt;);
+    dispatch_async(&lt;#队列变量#&gt;, ^{
+        
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>004808AA-65A5-47CC-A8E2-C646ED1E69E8</string>
+	<string>B9C7E920-EBD8-4FE4-9A19-836BD91D0E9A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>只能修饰数值类型的变量 不能修饰对象</string>
+	<string>异步队列快速创建,队列类型分为并行(DISPATCH_QUEUE_CONCURRENT)、串行（DISPATCH_QUEUE_SERIAL）</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>assign修饰的属性</string>
+	<string>异步队列快速创建</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
