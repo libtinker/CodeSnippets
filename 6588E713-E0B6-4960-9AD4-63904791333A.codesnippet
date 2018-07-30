@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ZJJGCDGroup</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_group_t group_t = dispatch_group_create();
+    dispatch_group_async(group_t, queue, ^{
+        //任务执行
+    });
+    dispatch_group_async(group_t, queue, ^{
+    //任务执行
+    });
+    dispatch_group_notify(group_t, queue, ^{
+        //上面的线程全部完成
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6588E713-E0B6-4960-9AD4-63904791333A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>线程组的创建使用</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>线程组使用</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

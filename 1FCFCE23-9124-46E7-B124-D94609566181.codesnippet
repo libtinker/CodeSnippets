@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ZJJGCDAfter</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>dispatch_time_t  time = dispatch_time(DISPATCH_TIME_NOW, &lt;#时间按秒算#&gt;ull * NSEC_PER_SEC);
+    dispatch_after(time, dispatch_get_main_queue(), ^{
+       // NSLog(@"time时间后执行的代码");
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1FCFCE23-9124-46E7-B124-D94609566181</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>多少时间过后要执行的任务（按秒算）</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>多少时间过后要执行的任务</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
