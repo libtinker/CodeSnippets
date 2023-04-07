@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zjjRequestToast</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        self.view.showLoadingView()
+        RequestManager.request(path: &lt;#T##String#&gt;, parameters: &lt;#T##Dictionary&lt;String, Any&gt;?#&gt;) { [weak self] result in
+            self?.view.hiddenLoadingView()
+            switch result {
+            case .success(let respose):
+                &lt;#请写求成功的逻辑#&gt;
+            case .failure(_, let msg, _):
+                self?.view.showToast(message: msg)
+            }
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>927E1A55-FFAA-4E36-833F-0B1995AC83D8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>网络请求带加载圈和toast提示</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>网络请求带加载圈和toast提示</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

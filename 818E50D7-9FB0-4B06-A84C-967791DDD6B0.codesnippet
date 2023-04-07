@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ZJJRequestErrorView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        self.view.showLoadingView()
+        RequestManager.request(path: &lt;#T##String#&gt;, parameters: &lt;#T##Dictionary&lt;String, Any&gt;?#&gt;) { [weak self] result in
+            self?.view.hiddenLoadingView()
+            switch result {
+            case .success(let respose):
+                self?.view.showEmptyView(state: .none, reloadBlock: {})
+            case .failure(let code, _, _):
+                self?.view.showEmptyView(state: code.toEmptyViewState(), reloadBlock: {
+                    
+                })
+            }
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>818E50D7-9FB0-4B06-A84C-967791DDD6B0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>网络请求带转圈和错误页面</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>网络请求带转圈和错误页面</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
