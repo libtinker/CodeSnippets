@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//MARK:- &lt;#标记信息#&gt;</string>
+	<string>//MARK: - &lt;#标记信息#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D7B87A36-597E-449E-A10A-CFDC3C0A6930</string>
 	<key>IDECodeSnippetLanguage</key>
